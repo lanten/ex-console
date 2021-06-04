@@ -8,4 +8,5 @@ exConsole.success('success text')
 const stopLoading = exConsole.loading('loading....')
 setTimeout(() => {
   stopLoading('loading done.', 'ERROR')
+  exConsole.info('all done.')
 }, 1000)
