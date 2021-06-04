@@ -1,0 +1,45 @@
+{
+  "name": "ex-console",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "pu": "npm run build && npm publish --access=public",
+    "build": "tsc -d",
+    "test": "npm run build && node __test__/test-console.js"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanten/ex-console.git"
+  },
+  "keywords": [
+    "console"
+  ],
+  "author": "lanten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanten/ex-console/issues"
+  },
+  "homepage": "https://github.com/lanten/ex-console#readme",
+  "devDependencies": {
+    "@types/node": "^15.12.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "rootDir": "src",
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "paths": {
+      "@/*": ["src"]
+    },
+    "lib": ["esnext", "scripthost"]
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules"]
+}
